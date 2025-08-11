@@ -5,3 +5,5 @@ Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figall
 Título e imagen de portada; Insignias; Índice; Descripción del Proyecto; Estado del proyecto; Demostración de funciones y aplicaciones; Acceso al Proyecto; Tecnologías utilizadas; Personas Contribuyentes; Personas Desarrolladoras del Proyecto; Licencia.
 
 VER: https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
+
+![mmi-morsmutual](https://github.com/user-attachments/assets/5bc600ad-72a8-48b5-859e-7de613894ecb)
