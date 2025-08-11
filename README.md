@@ -1,6 +1,6 @@
 <h1 align="center"> Lester-s-Corporation  </h1>       <p align="center">
   <a href="https://github.com/user-attachments/assets/08d041d2-6d59-43e8-9c2b-a6d8246c860a 
- ">📄 Abrir PDF</a>
+ "></a>
 </p>
 
 Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figallo
