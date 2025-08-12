@@ -11,6 +11,20 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 Funcionalidades
 
+✔️ Funcionalidad 1: Registro y gestión de usuarios con diferentes roles (administrador, cliente, etc.).
+✔️ Funcionalidad 2: Almacenamiento de datos relevantes de los usuarios en la base de datos.
+✔️ Funcionalidad 3: Consulta y visualización de la información registrada mediante la interfaz web.
+✔️ Funcionalidad 4: Generación de reportes o listados con información filtrada.
+✔️ Funcionalidad 5: Módulo para actualizar o eliminar datos existentes.
+✔️ Funcionalidad 6: Representación visual de procesos y estructuras del sistema mediante diagramas.
+✔️ Funcionalidad 7: Control de acceso según el tipo de usuario para proteger información y funciones sensibles.
+
+Acceso Al Proyecto...
+
+
+Tecnologias Utilizadas: 
+
+Python, html, etc.
 
 
 Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figallo
