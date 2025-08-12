@@ -6,6 +6,12 @@ Descripcion Del Proyecto
 
 Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este proyecto fue realizado con el objetivo de mejorar la accesibilidad de la empresa, debido a que gestionaban todas las compras de clientes en papel, lo cual es mas tardado y viendolo por el lado ambiental contamina por la cantidad de papeles. Junto con el equipo desarrollamos un sistema gestor de stock con el objetivo de que sea mas sencillo manejar las compras de los clientes y mejorar la cantidad de ventas debido a la metodologia que hace que todo sea mas rapido, otra parte importante dentro de este sistema fue la alerta para que el que administra los productos y kits de la empresa reciba un aviso de que se esta quedando sin stock.
 
+![Uploading Gestión de Stock con StockManager.png…]()
+
+
+Funcionalidades
+
+
 
 Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figallo
 
