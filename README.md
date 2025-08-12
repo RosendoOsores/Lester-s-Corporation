@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="Gestión de Stock con StockManager" src="https://github.com/user-attachments/assets/988e2d44-2e90-4a10-9d15-59bae4081ba0" /># Lester's Corporation
+# Lester's Corporation
 
 <img width="400" height="400" alt="Proyecto nuevo" src="https://github.com/user-attachments/assets/1a8172a8-f29d-45a7-bfee-0a2d6f106204" />
 
