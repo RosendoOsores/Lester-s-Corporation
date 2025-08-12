@@ -1,4 +1,4 @@
-# Lester's Corporation
+<img width="1536" height="1024" alt="Gestión de Stock con StockManager" src="https://github.com/user-attachments/assets/988e2d44-2e90-4a10-9d15-59bae4081ba0" /># Lester's Corporation
 
 <img width="400" height="400" alt="Proyecto nuevo" src="https://github.com/user-attachments/assets/1a8172a8-f29d-45a7-bfee-0a2d6f106204" />
 
@@ -6,7 +6,7 @@ Descripcion Del Proyecto
 
 Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este proyecto fue realizado con el objetivo de mejorar la accesibilidad de la empresa, debido a que gestionaban todas las compras de clientes en papel, lo cual es mas tardado y viendolo por el lado ambiental contamina por la cantidad de papeles. Junto con el equipo desarrollamos un sistema gestor de stock con el objetivo de que sea mas sencillo manejar las compras de los clientes y mejorar la cantidad de ventas debido a la metodologia que hace que todo sea mas rapido, otra parte importante dentro de este sistema fue la alerta para que el que administra los productos y kits de la empresa reciba un aviso de que se esta quedando sin stock.
 
-![Uploading Gestión de Stock con StockManager.png…]()
+ <img width="481" height="319" alt="image" src="https://github.com/user-attachments/assets/4872a041-7fe5-4eef-bed2-4a30a6c3a6ba" />
 
 
 Funcionalidades
