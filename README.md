@@ -6,6 +6,7 @@
 
 <h3>Descripcion Del Proyecto</h3>
 
+<hr>
 
 Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este proyecto fue realizado con el objetivo de mejorar la accesibilidad de la empresa, debido a que gestionaban todas las compras de clientes en papel, lo cual es mas tardado y viendolo por el lado ambiental contamina por la cantidad de papeles. Junto con el equipo desarrollamos un sistema gestor de stock con el objetivo de que sea mas sencillo manejar las compras de los clientes y mejorar la cantidad de ventas debido a la metodologia que hace que todo sea mas rapido, otra parte importante dentro de este sistema fue la alerta para que el que administra los productos y kits de la empresa reciba un aviso de que se esta quedando sin stock.
 
@@ -13,6 +14,8 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 
 <h3>Funcionalidades</h3>
+
+<hr>
 
 ✔️ Funcionalidad 1: Registro y gestión de usuarios con diferentes roles (administrador, cliente, etc.).
 
@@ -33,11 +36,12 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <h3>Acceso Al Proyecto...</h3>
 
-
+<hr>
 
 
 <h3 align="center">Tecnologias Utilizadas</h3>
 
+<hr>
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" alt="HTML logo"/>
@@ -48,14 +52,12 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 </p>
 
 
-<hr>
-
 <h3 align="center">Personas Contribuyentes</h3>
 
+<hr>
 
 https://github.com/daoldev 
 
-<hr>
 
 <h3 align="center">Desarrolladores Del Proyeto</h3>
 
