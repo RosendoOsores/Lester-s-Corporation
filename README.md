@@ -51,4 +51,4 @@ Título e imagen de portada; Insignias; Índice; Descripción del Proyecto; Esta
 
 VER: https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
 
-![mmi-morsmutual](https://github.com/user-attachments/assets/5bc600ad-72a8-48b5-859e-7de613894ecb)
+<img width="100%" height="443" alt="image" src="https://github.com/user-attachments/assets/5bc600ad-72a8-48b5-859e-7de613894ecb" />
