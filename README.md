@@ -12,7 +12,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 <img width="898" height="443" alt="image" src="https://github.com/user-attachments/assets/d0548a32-0d75-49bc-9fba-13a0fa0c8f5e" />
 
 
-Funcionalidades
+<h3>Funcionalidades</h3>
 
 ✔️ Funcionalidad 1: Registro y gestión de usuarios con diferentes roles (administrador, cliente, etc.).
 
