@@ -48,7 +48,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 <h3>Personas Contribuyentes</h3>
 
 
-
+https://github.com/daoldev 
 
 
 Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figallo
