@@ -61,7 +61,7 @@ https://github.com/daoldev
 
 <hr>
 
-<p align="center">
+<p align="center"
 
 -Rosendo Osores 
 
