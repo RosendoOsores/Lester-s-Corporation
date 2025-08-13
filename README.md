@@ -51,7 +51,15 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 https://github.com/daoldev 
 
 
-Integrantes: Rosendo Osores - Morena Gonzalez - Thiago Casiano - Brunella Figallo
+<h3 align="center">Desarrolladores Del Proyeto</h3>
+
+-Rosendo Osores 
+
+-Morena Gonzalez
+
+-Thiago Casiano
+
+-Brunella Figallo
 
 Título e imagen de portada; Insignias; Índice; Descripción del Proyecto; Estado del proyecto; Demostración de funciones y aplicaciones; Acceso al Proyecto; Tecnologías utilizadas; Personas Contribuyentes; Personas Desarrolladoras del Proyecto; Licencia.
 
