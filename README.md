@@ -56,7 +56,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <hr>
 
-https://github.com/daoldev 
+<p align="center"> https://github.com/daoldev </p> 
 
 
 <h3 align="center">Desarrolladores Del Proyeto</h3>
