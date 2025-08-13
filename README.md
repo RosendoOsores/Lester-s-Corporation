@@ -4,7 +4,7 @@
 
 <p align="center">
   <audio controls>
-    <source src="audio/mimusica.mp3" type="audio/mpeg">
+    <source src="    " type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
 </p>
