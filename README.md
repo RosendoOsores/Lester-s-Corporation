@@ -55,8 +55,11 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 https://github.com/daoldev 
 
+<hr>
 
 <h3 align="center">Desarrolladores Del Proyeto</h3>
+
+<hr>
 
 -Rosendo Osores 
 
