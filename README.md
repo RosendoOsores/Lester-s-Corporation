@@ -61,17 +61,15 @@ https://github.com/daoldev
 
 <hr>
 
-<p align="center"
+<p align="center"> -Rosendo Osores </p>
 
--Rosendo Osores 
+<p align="center"> -Morena Gonzalez </p>
 
--Morena Gonzalez
+<p align="center"> -Thiago Casiano </p>
 
--Thiago Casiano
+<p align="center"> -Brunella Figallo </p>
 
--Brunella Figallo
 
-</p>
 
 Título e imagen de portada; Insignias; Índice; Descripción del Proyecto; Estado del proyecto; Demostración de funciones y aplicaciones; Acceso al Proyecto; Tecnologías utilizadas; Personas Contribuyentes; Personas Desarrolladoras del Proyecto; Licencia.
 
