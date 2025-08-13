@@ -48,7 +48,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 </p>
 
 
-
+<hr>
 
 <h3>Personas Contribuyentes</h3>
 
