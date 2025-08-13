@@ -1,5 +1,16 @@
 # <h1 align="center">  Lester's Corporation </h1>
 
+<h2 align="center">🎵 Escuchá el audio</h2>
+
+<p align="center">
+  <audio controls>
+    <source src="audio/mimusica.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</p>
+
+
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1a8172a8-f29d-45a7-bfee-0a2d6f106204" alt="Imagen centrada" width="300"/>
 </p>
