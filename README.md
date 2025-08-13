@@ -1,4 +1,4 @@
-# Lester's Corporation
+ <p align="center"> # Lester's Corporation </p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1a8172a8-f29d-45a7-bfee-0a2d6f106204" alt="Imagen centrada" width="300"/>
