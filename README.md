@@ -29,7 +29,11 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 ✔️ Funcionalidad 7: Control de acceso según el tipo de usuario para proteger información y funciones sensibles.
 
 
+
+
 Acceso Al Proyecto...
+
+
 
 
 <h3 align="center">Tecnologias Utilizadas</h3>
