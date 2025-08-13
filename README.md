@@ -50,7 +50,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <hr>
 
-<h3>Personas Contribuyentes</h3>
+<h3 align="center" Personas Contribuyentes</h3>
 
 
 https://github.com/daoldev 
