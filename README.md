@@ -40,8 +40,6 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <h3 align="center">Tecnologias Utilizadas</h3>
 
-<hr>
-
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" alt="HTML logo"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60" alt="CSS logo"/>
@@ -50,15 +48,15 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" width="100" alt="Flask logo"/>
 </p>
 
-<h3 align="center">Personas Contribuyentes</h3>
-
 <hr>
+
+<h3 align="center">Personas Contribuyentes</h3>
 
 <p align="center">https://github.com/daoldev</p> 
 
-<h3 align="center">Desarrolladores Del Proyeto</h3>
-
 <hr>
+
+<h3 align="center">Desarrolladores Del Proyeto</h3>
 
 <p align="center"> -Rosendo Osores </p>
 
