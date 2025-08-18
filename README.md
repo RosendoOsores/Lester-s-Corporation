@@ -39,6 +39,9 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <hr>
 
+<h3>Acceso al formulario de encuesta para los empleados:</h3><p>https://forms.gle/WjduPiW4hdhwhsqv8</p>
+
+<hr>
 
 <h3 align="center">Tecnologias Utilizadas</h3>
 
