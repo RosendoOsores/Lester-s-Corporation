@@ -32,13 +32,11 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 ✔️ Funcionalidad 7: Control de acceso según el tipo de usuario para proteger información y funciones sensibles.
 
-
-
-
-<h3>Acceso Al Proyecto...</h3>
-
 <hr>
 
+<h3>Acceso al proyecto en la branch "PAGINA-WEB---BLACK-IRON", en la carpeta "TODO"</h3>
+
+<hr>
 
 <h3 align="center">Tecnologias Utilizadas</h3>
 
@@ -52,13 +50,11 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" width="100" alt="Flask logo"/>
 </p>
 
-
 <h3 align="center">Personas Contribuyentes</h3>
 
 <hr>
 
 <p align="center">https://github.com/daoldev</p> 
-
 
 <h3 align="center">Desarrolladores Del Proyeto</h3>
 
@@ -72,7 +68,7 @@ Proyecto desarrollado por Lester's Corporation para la empresa Black Iron. Este 
 
 <p align="center"> -Brunella Figallo </p>
 
-
+<hr>
 
 Título e imagen de portada; Insignias; Índice; Descripción del Proyecto; Estado del proyecto; Demostración de funciones y aplicaciones; Acceso al Proyecto; Tecnologías utilizadas; Personas Contribuyentes; Personas Desarrolladoras del Proyecto; Licencia.
 
