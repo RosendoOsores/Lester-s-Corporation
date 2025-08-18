@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/roles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <title>Repositor</title>
+</head>
+<body>
+
+    {% with mensajes = get_flashed_messages() %}
+    {% if mensajes %}
+        <div class="alerta">
+            {{ mensajes[0] }}
+        </div>
+        <script>
+            setTimeout(() => {
+                document.querySelector('.alerta').style.display = 'none';
+            }, 4000);
+        </script>
+    {% endif %}
+    {% endwith %}
+
+    <h1>Bienvenido Repositor</h1>
+    <h2>En este apartado va a poder cargar los productos que van llegando a la empresa</h2>
+    <a class="icono" href="{{ url_for('index') }}"><i class='bx  bx-undo'></i> </a> 
+
+    <form action="" method="POST">
+    
+        <fieldset>
+            <legend>Agregar stock:</legend>
+            
+            <label for="nombre_producto">Nombre producto:</label>
+            <input type="text" name="nombre_producto" placeholder="Nombre del producto" required>
+            
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" name="cantidad" placeholder="Cantidad"  min="1" max="1000" required>
+            
+        </fieldset>
+        <button type="submit">Agregar</button>
+    </form>
+
+</body>
+</html>

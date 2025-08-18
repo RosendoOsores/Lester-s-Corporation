@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/roles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Administrador</title>
+</head>
+<body>
+    {% with mensajes = get_flashed_messages() %}
+    {% if mensajes %}
+        <div class="alerta">
+            {{ mensajes[0] }}
+        </div>
+        <script>
+            setTimeout(() => {
+                document.querySelector('.alerta').style.display = 'none';
+            }, 4000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
+
+
+    <h1>Bienvenido Administrador</h1>
+    <h2>En este apartado va a poder revisar lo que estuvo pasando recientemente en el sistema</h2>
+    <a class="icono" href="{{ url_for('index') }}"><i class='bx  bx-undo'></i> </a> 
+    
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Agregar rol:</legend>
+            
+            <label for="rol">Rol:</label>
+            <input type="text" name="rol" placeholder="Rol" minlength="3" required>
+            
+        </fieldset>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Agregar empleado:</legend>
+            
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" placeholder="Usuario" minlength="3" required>
+            
+            <label for="rol">Rol:</label>
+            <input type="text" name="rol" placeholder="Rol" minlength="3" required>
+            
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" placeholder="Contraseña" minlength="2" required>
+        </fieldset>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Eliminar empleado:</legend>
+            
+            <label for="eliminar_usuario">Usuario:</label>
+            <input type="text" name="eliminar_usuario" placeholder="Usuario" minlength="3" required>
+            
+            <label for="eliminar_rol">Rol:</label>
+            <input type="text" name="eliminar_rol" placeholder="Rol" minlength="3" required>
+            
+            <label for="eliminar_contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" placeholder="Contraseña" minlength="2" required>
+        </fieldset>
+        <button type="submit">Eliminar</button>
+    </form>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Agregar producto:</legend>
+            
+            <label for="nombre_producto">Nombre producto:</label>
+            <input type="text" name="nombre_producto" placeholder="Nombre producto" minlength="3" required>
+            
+            <label for="descripcion">Descripcion:</label>
+            <input type="text" name="descripcion" placeholder="Descripcion" maxlength="300" required>
+            
+            <label for="tipo">Tipo:</label>
+            <input type="text" name="tipo" placeholder="Tipo" required>
+            
+            <label for="precio">Precio:</label>
+            <input type="number" name="precio" placeholder="Precio" min="1" required>
+
+            <label for="stock_minimo">Stock minimo:</label>
+            <input type="number" name="stock_minimo" placeholder="Stock minimo" min="1" required>
+            
+            <label for="stock_maximo">Stock maximo:</label>
+            <input type="number" name="stock_maximo" placeholder="Stock maximo" min="1" max="1000" required>
+
+            <label for="stock_actual">Stock actual:</label>
+            <input type="number" name="stock_actual" placeholder="Stock actual" min="0" required>
+        
+        </fieldset>
+        <button type="submit">Agregar</button>
+    </form>
+    
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Agregar kit:</legend>
+            
+            <label for="nombre_kit">Nombre kit:</label>
+            <input type="text" name="nombre_kit" placeholder="Nombre kit" required>
+            
+            <label for="descripcion">Descripcion:</label>
+            <input type="text" name="descripcion" placeholder="Descripcion" required>
+            
+            <div class="crear-productos">
+                    <label for="producto"><b>Productos</b></label>
+                    <div id="productos-lista">
+                        <div class="producto-item">
+                            <input type="text" name="productos[]" class="nombre_producto" placeholder="Producto individual">
+                            <input type="number" name="cantidades_productos[]" class="cantidad_producto" min="1" value="1">
+                            <i class="fa-solid fa-xmark eliminar-producto" title="Eliminar" style="display: none;"></i>
+                            <i class="fa-solid fa-pen editar-producto" title="Editar" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <button type="button" onclick="agregarProducto()">+ Agregar producto</button>
+                </div>
+        </fieldset>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <form action="">
+        <fieldset>
+        <legend>Ver estado general:</legend>
+            <a href="{{ url_for('estado') }}">
+                <button type="button" class="estado-general">Hacer click para ver el estado general</button>
+            </a>
+        </fieldset>
+    </form>
+    
+    <script>
+        // Agregar producto individual con cantidad
+        function agregarProducto() {
+            const cont = document.getElementById("productos-lista");
+            const item = document.createElement("div");
+            item.className = "producto-item";
+            item.innerHTML = `
+                <input type="text" name="productos[]" class="nombre_producto" placeholder="Producto">
+                <input type="number" name="cantidades_productos[]" class="cantidad_producto" min="1" value="1">
+                <i class="fa-solid fa-xmark eliminar-producto" title="Eliminar"></i>
+                <i class="fa-solid fa-pen editar-producto" title="Editar"></i>
+            `;
+            cont.appendChild(item);
+        }
+    
+        // Delegación: eliminar / editar
+        document.addEventListener('click', (e) => {
+          // Eliminar
+            if (e.target.classList.contains('eliminar-producto') || e.target.classList.contains('eliminar-kit')) {
+                e.target.parentElement.remove();
+            }
+          // Editar
+            if (e.target.classList.contains('editar-producto') || e.target.classList.contains('editar-kit')) {
+                const input = e.target.parentElement.querySelector('input');
+                input.removeAttribute('readonly');
+                input.focus();
+            }
+        });
+    </script>
+
+
+</body>
+</html>

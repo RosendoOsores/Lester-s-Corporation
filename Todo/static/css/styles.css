@@ -1,0 +1,90 @@
+body {
+    background: #FFFFFF;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgb(148, 148, 148) 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+.icono{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    background: linear-gradient( #000000, #5a5a5a);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2em;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgb(196, 197, 207);
+    width: 100%;
+    max-width: 300px;
+    flex: 1 1 auto;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.card-administrador {
+    width: 512px;
+    height: 512px;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    .card { max-width: 250px; }
+}
+
+
+@media (max-width: 480px) {
+    body { font-size: 14px; }
+
+    .card-group {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.3rem; }
+}

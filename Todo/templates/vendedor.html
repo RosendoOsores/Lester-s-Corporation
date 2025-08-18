@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/roles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Vendedor</title>
+</head>
+<body>
+    <h1>Bienvenido Vendedor</h1>
+    <h2>En este apartado va a poder armar los pedidos</h2>
+    <a class="icono" href="{{ url_for('index') }}"><i class='bx bx-undo'></i></a> 
+
+    {% with mensajes = get_flashed_messages() %}
+        {% if mensajes %}
+        <script>
+            alert("{{ mensajes[-1] }}");
+        </script>
+        {% endif %}
+    {% endwith %}
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Procesar pedido:</legend>
+            
+            <div class="bloque-doble">
+
+                <div class="crear-kit">
+                    <label for="kit"><b>Kits (opcional)</b></label>
+                    <div id="kit-lista">
+                        <div class="kit-item">
+                            <input type="text" name="kits[]" class="nombre_kit" placeholder="Kit">
+                            <input type="number" name="cantidades_kits[]" class="cantidad_kit" min="1" value="1">
+                            <i class="fa-solid fa-xmark eliminar-kit" title="Eliminar" style="display: none;"></i>
+                            <i class="fa-solid fa-pen editar-kit" title="Editar" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <button type="button" onclick="agregarKit()">+ Agregar kit</button>
+                </div>
+                
+                <div class="crear-productos">
+                    <label for="producto"><b>Productos (opcional)</b></label>
+                    <div id="productos-lista">
+                        <div class="producto-item">
+                            <input type="text" name="productos[]" class="nombre_producto" placeholder="Producto individual">
+                            <input type="number" name="cantidades_productos[]" class="cantidad_producto" min="1" value="1">
+                            <i class="fa-solid fa-xmark eliminar-producto" title="Eliminar" style="display: none;"></i>
+                            <i class="fa-solid fa-pen editar-producto" title="Editar" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <button type="button" onclick="agregarProducto()">+ Agregar producto</button>
+                </div>
+
+            </div>
+            
+            <label for="nombre_comprador">Nombre comprador:</label>
+            <input type="text" name="nombre_comprador" placeholder="Nombre del comprador" minlength="3" required>
+
+            <label for="dni_comprador">DNI comprador:</label>
+            <input type="number" name="dni_comprador" placeholder="DNI del comprador" required>
+
+            <label for="id_empleado">ID empleado:</label>
+            <input type="number" name="id_empleado" placeholder="ID del empleado" required>
+        </fieldset>
+        <button type="submit">Confirmar Venta</button>
+    </form>
+
+
+    <script>
+    
+        function agregarProducto() {
+            const cont = document.getElementById("productos-lista");
+            const item = document.createElement("div");
+            item.className = "producto-item";
+            item.innerHTML = `
+                <input type="text" name="productos[]" class="nombre_producto" placeholder="Producto...">
+                <input type="number" name="cantidades_productos[]" class="cantidad_producto" min="1" value="1">
+                <i class="fa-solid fa-xmark eliminar-producto" title="Eliminar"></i>
+                <i class="fa-solid fa-pen editar-producto" title="Editar"></i>
+            `;
+            cont.appendChild(item);
+        }
+    
+        function agregarKit() {
+            const cont = document.getElementById("kit-lista");
+            const item = document.createElement("div");
+            item.className = "kit-item";
+            item.innerHTML = `
+                <input type="text" name="kits[]" class="nombre_kit" placeholder="Kit...">
+                <input type="number" name="cantidades_kits[]" class="cantidad_kit" min="1" value="1">
+                <i class="fa-solid fa-xmark eliminar-kit" title="Eliminar"></i>
+                <i class="fa-solid fa-pen editar-kit" title="Editar"></i>
+            `;
+            cont.appendChild(item);
+        }
+    
+        document.addEventListener('click', (e) => {
+        
+            if (e.target.classList.contains('eliminar-producto') || e.target.classList.contains('eliminar-kit')) {
+                e.target.parentElement.remove();
+            }
+        
+            if (e.target.classList.contains('editar-producto') || e.target.classList.contains('editar-kit')) {
+                const input = e.target.parentElement.querySelector('input');
+                input.removeAttribute('readonly');
+                input.focus();
+            }
+        
+        });
+    </script>
+
+</body>
+</html>

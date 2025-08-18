@@ -1,0 +1,136 @@
+body{
+    background: #FFFFFF;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgb(148, 148, 148) 100%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.icono{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background: #FFFFFF;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgb(148, 148, 148) 100%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 1em;
+}
+
+form{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    border: 1px ridge rgb(100, 100, 100);
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+
+p, label{
+    margin-left: 13px;
+}
+
+button{
+    margin: 1em;
+    border-radius: 5px;
+    display: block;
+}
+
+fieldset {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    margin: 1em;
+    width: 25%;
+}
+
+.alerta {
+    top: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    border: 1px ridge rgb(100, 100, 100);
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px black;
+    padding: 15px;
+    background: white;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid rgb(150, 150, 150);
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background: #f0f0f0;
+}
+
+.alerta-card {
+    background: #ffe6e6;
+    border: 1px solid #ff4d4d;
+}
