@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <title>Lester's Corporations - Black Iron</title>
+</head>
+<body>
+    
+    <h1>BIENVENIDO</h1>
+    <h2>Proceda a la identificacion</h2>
+
+    <main class="seccion-main">
+        <div class="card-group">
+            <div class="card">
+    <a href="{{ url_for('registro', rol='vendedor') }}"><img src="/static/img/vendedor.jpg" class="card-img-top" alt="icono-vendedor"></a>
+    <div class="card-body">
+        <h3 class="card-title">Vendedor</h3>
+    </div>
+</div>
+<div class="card">
+    <a href="{{ url_for('registro', rol='administrador') }}"><img src="/static/img/administrador.jpg" class="card-administrador" alt="icono-administrador"></a>
+    <div class="card-body">
+        <h3 class="card-title">Administrador</h3>
+    </div>
+</div>
+<div class="card">
+    <a href="{{ url_for('registro', rol='repositor') }}"><img src="/static/img/repositor.jpg" class="card-img-top" alt="icono-repositor"></a>
+    <div class="card-body">
+        <h3 class="card-title">Repositor</h3>
+    </div>
+</div>
+
+        </div>
+    </main>
+
+</body>
+</html>

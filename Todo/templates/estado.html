@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/roles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <title>Estado General</title>
+</head>
+<body>
+    
+    <h1>Estado General</h1>
+    <a class="icono" href="{{ url_for('index') }}"><i class='bx  bx-undo'></i></a> 
+
+    
+
+<div class="contenedor">
+
+    <!-- Productos -->
+<div class="card">
+    <h2>Productos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>Tipo</th><th>Precio</th><th>Stock</th><th>Stock mínimo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in datos["productos"] %}
+            <tr {% if p.stock_actual < p.stock_minimo %} style="background:#ffcccc;" {% endif %}>
+                <td>{{ p.id }}</td>
+                <td>{{ p.nombre }}</td>
+                <td>{{ p.tipo }}</td>
+                <td>${{ p.precio }}</td>
+                <td>{{ p.stock_actual }}</td>
+                <td>{{ p.stock_minimo }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Kits -->
+<div class="card">
+    <h2>Kits</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>Descripción</th><th>Stock</th><th>Productos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for k in datos["kits"] %}
+            <tr>
+                <td>{{ k.id }}</td>
+                <td>{{ k.nombre_kit }}</td>
+                <td>{{ k.descripcion }}</td>
+                <td>{{ k.stock_actual }}</td>
+                <td>
+                    <ul>
+                        {% for prod in k.productos %}
+                        <li>{{ prod.nombre_producto }} (x{{ prod.cantidad }})</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Pedidos -->
+<div class="card">
+    <h2>Pedidos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Fecha</th><th>Estado</th><th>Empleado</th><th>Comprador</th><th>DNI</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ped in datos["pedidos"] %}
+            <tr>
+                <td>{{ ped.id }}</td>
+                <td>{{ ped.fecha }}</td>
+                <td>{{ ped.estado }}</td>
+                <td>{{ ped.id_empleado }}</td>
+                <td>{{ ped.nombre_comprador }}</td>
+                <td>{{ ped.dni_comprador }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Alertas -->
+<div class="card alerta-card">
+    <h2>Alertas</h2>
+    <ul>
+        {% for a in datos["alertas"]["productos"] %}
+        <li style="color:red;">⚠️ {{ a }}</li>
+        {% endfor %}
+        {% for a in datos["alertas"]["kits"] %}
+        <li style="color:red;">⚠️ {{ a }}</li>
+        {% endfor %}
+        {% if not datos["alertas"]["productos"] and not datos["alertas"]["kits"] %}
+        <li style="color:green;">✅ No hay alertas</li>
+        {% endif %}
+    </ul>
+</div>
+
+
+</body>
+</html>

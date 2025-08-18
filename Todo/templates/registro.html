@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/roles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="/static/img/empresa.ico">
+    <title>Corroboracion de roles</title>
+</head>
+<body>
+    {% with mensajes = get_flashed_messages() %}
+        {% if mensajes %}
+            <div class="alerta">
+                {{ mensajes[0] }}
+            </div>
+            <script>
+                setTimeout(() => {
+                    document.querySelector('.alerta').style.display = 'none';
+                }, 4000);
+            </script>
+        {% endif %}
+    {% endwith %}
+
+    <h1>Corroborar identificacion</h1>
+    <a class="icono" href="{{ url_for('index') }}"><i class='bx  bx-undo'></i></a> 
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" placeholder="Usuario" minlength="3" required>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" placeholder="Contraseña" minlength="2" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
